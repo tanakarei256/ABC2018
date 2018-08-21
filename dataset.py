@@ -34,7 +34,7 @@ def trim_trajectory(trajectory, max_trajectories = 10000):
             
     return trimed_trajectories
 
-with gzip.open('../dataset', mode='rb') as f:
+with gzip.open('dataset', mode='rb') as f:
     data = pickle.load(f)
 
 new_data = {}
@@ -71,5 +71,5 @@ new_data['train_labels'] = numpy.array(new_data['train_labels'], dtype=numpy.int
 
 print('train data : ' + str(len(new_data['train'])))
 
-with gzip.open('../dataset_augmented', mode='wb') as f:
+with gzip.open('dataset_augmented', mode='wb') as f:
     pickle.dump(new_data, f)

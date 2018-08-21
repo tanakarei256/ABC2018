@@ -6,7 +6,7 @@ import os
 
 import model
 
-with gzip.open('../dataset_augmented', mode='rb') as f:
+with gzip.open('dataset_augmented', mode='rb') as f:
     data = pickle.load(f)
 
 results = []

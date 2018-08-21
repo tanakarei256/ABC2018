@@ -8,7 +8,7 @@ import pickle
 
 import model
 
-with gzip.open('../dataset_augmented', mode='rb') as f:
+with gzip.open('dataset_augmented', mode='rb') as f:
     data = pickle.load(f)
 
 dataset = list(zip(data['train'], data['train_labels']))
