@@ -1,4 +1,9 @@
 ## Method
+I used 1-dimensional convolutional neural networks for predicting gender of birds.  
+The network is defined in model.py.
+
+Trajectories was interpolated to fill small gaps and split into same length avoid long time gaps.
+I used longitude, latitude, sun azimuth and sun elevation in trajectories.
 
 ## Requirement
 * chainer 4.1.0
